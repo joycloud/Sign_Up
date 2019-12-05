@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Home";
+    var account = "";
+    if (Session["account"] == null || string.IsNullOrWhiteSpace(Session["account"].ToString()))
+    {
+        Response.Redirect("~/Account/Login");
+    }
+    else
+    {
+        account = Session["account"].ToString();
+    }
+}
+
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+
+<h2>歡迎登入: @account</h2>

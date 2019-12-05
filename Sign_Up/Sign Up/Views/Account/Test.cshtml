@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home";
+    var account = "";
+
+
+    //if (Session["account"] == null || string.IsNullOrWhiteSpace(Session["account"].ToString()))
+    //{
+    //    Response.Redirect("~/Account/Login");
+    //}
+    //else
+    //{
+    //    account = Session["account"].ToString();
+    //}
+}
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+
+<div id="sitebody">
+        <div id="header">
+            @*<h2 id="Session" style="text-align: right;">Welcome: @account</h2>*@
+        </div>
+        <div id="sidebar_left">sidebar_left</div>
+        <div id="sidebar_right">sidebar_right</div>
+        <div id="content">content</div>
+        <div id="footer">footer</div>
+    </div>
+
+
+@*<p>
+        <a class="btn btn-default" href="@Url.Action("Success")">
+            登入狀況 
+        </a>
+    </p>
+    <p>
+        <a class="btn btn-default" href="@Url.Action("Login")">
+            登入 
+        </a> 
+    </p>
+    <p>
+        <a class="btn btn-default" href="@Url.Action("Logout")">
+            登出
+        </a>
+    </p>*@
